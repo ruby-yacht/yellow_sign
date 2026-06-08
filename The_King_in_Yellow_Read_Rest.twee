@@ -1,0 +1,412 @@
+:: StoryTitle
+The King in Yellow
+
+:: StoryData
+{
+  "ifid": "E0A4C7A9-9D34-4A0B-9A22-KINGINYELLOWPLAY",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Title Page"
+}
+
+:: StoryInit
+<<set $readingBalance = 0>>
+
+:: Title Page
+# The King in Yellow
+
+A Play in Three Acts
+
+**Dramatis Personae**
+
+* Albert
+* Betty
+* Charlie
+* Dorothy
+* Edward
+* Florence
+
+''Reading Balance:'' <<= $readingBalance>>
+
+[[Begin->Act I, Scene 1]]
+
+:: Act I, Scene 1
+!! ACT I
+=== Scene 1 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 1.1.]//
+
+'''ALBERT:'''
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+
+'''BETTY:'''
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+
+'''CHARLIE:'''
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+
+'''DOROTHY:'''
+culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+'''FLORENCE:'''
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Sed quia consequuntur magni dolores eos qui ratione
+
+----
+''Reading Balance:'' <<= $readingBalance>>
+
+<<link "read on" "Act I, Scene 2">><<set $readingBalance += 1>><</link>>
+
+<<link "rest" "Rest after Act I, Scene 1">><<set $readingBalance -= 1>><</link>>
+
+:: Rest after Act I, Scene 1
+=== Rest ===
+
+//[The page is lowered. The room grows still. A pause passes between scenes.]//
+
+''Reading Balance:'' <<= $readingBalance>>
+
+[[Continue->Act I, Scene 2]]
+
+:: Act I, Scene 2
+=== Scene 2 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 1.2.]//
+
+'''ALBERT:'''
+voluptatem sequi nesciunt. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit. Sed quia non
+
+'''BETTY:'''
+numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam quis nostrum
+
+'''CHARLIE:'''
+exercitationem ullam corporis suscipit laboriosam. Nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in
+
+'''DOROTHY:'''
+ea voluptate velit esse quam nihil molestiae consequatur. Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. Et harum quidem rerum facilis est et expedita distinctio.
+
+'''FLORENCE:'''
+Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus. Temporibus autem quibusdam et aut officiis
+
+----
+''Reading Balance:'' <<= $readingBalance>>
+
+<<link "read on" "Act I, Scene 3">><<set $readingBalance += 1>><</link>>
+
+<<link "rest" "Rest after Act I, Scene 2">><<set $readingBalance -= 1>><</link>>
+
+:: Rest after Act I, Scene 2
+=== Rest ===
+
+//[The page is lowered. The room grows still. A pause passes between scenes.]//
+
+''Reading Balance:'' <<= $readingBalance>>
+
+[[Continue->Act I, Scene 3]]
+
+:: Act I, Scene 3
+=== Scene 3 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 1.3.]//
+
+'''ALBERT:'''
+debitis aut rerum necessitatibus saepe eveniet. Itaque earum rerum hic tenetur a sapiente delectus. Lorem ipsum dolor sit amet, consectetur
+
+'''BETTY:'''
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+
+'''CHARLIE:'''
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+
+'''DOROTHY:'''
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Eaque
+
+'''FLORENCE:'''
+ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+
+----
+''Reading Balance:'' <<= $readingBalance>>
+
+<<link "read on" "Act II, Scene 1">><<set $readingBalance += 1>><</link>>
+
+<<link "rest" "Rest after Act I, Scene 3">><<set $readingBalance -= 1>><</link>>
+
+:: Rest after Act I, Scene 3
+=== Rest ===
+
+//[The page is lowered. The room grows still. A pause passes between scenes.]//
+
+''Reading Balance:'' <<= $readingBalance>>
+
+[[Continue->Act II, Scene 1]]
+
+:: Act II, Scene 1
+!! ACT II
+=== Scene 1 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 2.1.]//
+
+'''ALBERT:'''
+sit aspernatur aut odit aut fugit. Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+
+'''BETTY:'''
+est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit. Sed quia non numquam eius modi tempora incidunt ut
+
+'''CHARLIE:'''
+labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam. Nisi
+
+'''DOROTHY:'''
+ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+molestiae consequatur. Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio
+
+'''FLORENCE:'''
+dignissimos ducimus qui blanditiis praesentium. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore cum soluta nobis
+
+----
+''Reading Balance:'' <<= $readingBalance>>
+
+<<link "read on" "Act II, Scene 2">><<set $readingBalance += 1>><</link>>
+
+<<link "rest" "Rest after Act II, Scene 1">><<set $readingBalance -= 1>><</link>>
+
+:: Rest after Act II, Scene 1
+=== Rest ===
+
+//[The page is lowered. The room grows still. A pause passes between scenes.]//
+
+''Reading Balance:'' <<= $readingBalance>>
+
+[[Continue->Act II, Scene 2]]
+
+:: Act II, Scene 2
+=== Scene 2 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 2.2.]//
+
+'''ALBERT:'''
+est eligendi optio cumque nihil impedit quo minus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.
+
+'''BETTY:'''
+Itaque earum rerum hic tenetur a sapiente delectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+
+'''CHARLIE:'''
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+
+'''DOROTHY:'''
+ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+
+'''FLORENCE:'''
+unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo inventore veritatis
+
+----
+''Reading Balance:'' <<= $readingBalance>>
+
+<<link "read on" "Act II, Scene 3">><<set $readingBalance += 1>><</link>>
+
+<<link "rest" "Rest after Act II, Scene 2">><<set $readingBalance -= 1>><</link>>
+
+:: Rest after Act II, Scene 2
+=== Rest ===
+
+//[The page is lowered. The room grows still. A pause passes between scenes.]//
+
+''Reading Balance:'' <<= $readingBalance>>
+
+[[Continue->Act II, Scene 3]]
+
+:: Act II, Scene 3
+=== Scene 3 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 2.3.]//
+
+'''ALBERT:'''
+et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+
+'''BETTY:'''
+Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est qui dolorem ipsum quia dolor
+
+'''CHARLIE:'''
+sit amet consectetur adipisci velit. Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+
+'''DOROTHY:'''
+voluptatem. Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam. Nisi ut aliquid ex ea commodi consequatur.
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Vel illum qui dolorem
+
+'''FLORENCE:'''
+eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. Et
+
+----
+''Reading Balance:'' <<= $readingBalance>>
+
+<<link "read on" "Act III, Scene 1">><<set $readingBalance += 1>><</link>>
+
+<<link "rest" "Rest after Act II, Scene 3">><<set $readingBalance -= 1>><</link>>
+
+:: Rest after Act II, Scene 3
+=== Rest ===
+
+//[The page is lowered. The room grows still. A pause passes between scenes.]//
+
+''Reading Balance:'' <<= $readingBalance>>
+
+[[Continue->Act III, Scene 1]]
+
+:: Act III, Scene 1
+!! ACT III
+=== Scene 1 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 3.1.]//
+
+'''ALBERT:'''
+harum quidem rerum facilis est et expedita distinctio. Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit
+
+'''BETTY:'''
+quo minus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. Itaque earum rerum hic tenetur a
+
+'''CHARLIE:'''
+sapiente delectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+
+'''DOROTHY:'''
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+
+'''FLORENCE:'''
+sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+
+----
+''Reading Balance:'' <<= $readingBalance>>
+
+<<link "read on" "Act III, Scene 2">><<set $readingBalance += 1>><</link>>
+
+<<link "rest" "Rest after Act III, Scene 1">><<set $readingBalance -= 1>><</link>>
+
+:: Rest after Act III, Scene 1
+=== Rest ===
+
+//[The page is lowered. The room grows still. A pause passes between scenes.]//
+
+''Reading Balance:'' <<= $readingBalance>>
+
+[[Continue->Act III, Scene 2]]
+
+:: Act III, Scene 2
+=== Scene 2 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 3.2.]//
+
+'''ALBERT:'''
+voluptatem accusantium doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+
+'''BETTY:'''
+sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Sed quia consequuntur magni dolores eos
+
+'''CHARLIE:'''
+qui ratione voluptatem sequi nesciunt. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit. Sed
+
+'''DOROTHY:'''
+quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+quis nostrum exercitationem ullam corporis suscipit laboriosam. Nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit
+
+'''FLORENCE:'''
+qui in ea voluptate velit esse quam nihil molestiae consequatur. Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+
+----
+''Reading Balance:'' <<= $readingBalance>>
+
+<<link "read on" "Act III, Scene 3">><<set $readingBalance += 1>><</link>>
+
+<<link "rest" "Rest after Act III, Scene 2">><<set $readingBalance -= 1>><</link>>
+
+:: Rest after Act III, Scene 2
+=== Rest ===
+
+//[The page is lowered. The room grows still. A pause passes between scenes.]//
+
+''Reading Balance:'' <<= $readingBalance>>
+
+[[Continue->Act III, Scene 3]]
+
+:: Act III, Scene 3
+=== Scene 3 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 3.3.]//
+
+'''ALBERT:'''
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. Et harum quidem rerum facilis est et
+
+'''BETTY:'''
+expedita distinctio. Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus. Temporibus autem quibusdam et
+
+'''CHARLIE:'''
+aut officiis debitis aut rerum necessitatibus saepe eveniet. Itaque earum rerum hic tenetur a sapiente delectus. Lorem ipsum dolor sit
+
+'''DOROTHY:'''
+amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+
+'''FLORENCE:'''
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+
+----
+''Reading Balance:'' <<= $readingBalance>>
+
+<<link "read on" "Final Page">><<set $readingBalance += 1>><</link>>
+
+<<link "rest" "Rest after Act III, Scene 3">><<set $readingBalance -= 1>><</link>>
+
+:: Rest after Act III, Scene 3
+=== Rest ===
+
+//[The page is lowered. The room grows still. A pause passes between scenes.]//
+
+''Reading Balance:'' <<= $readingBalance>>
+
+[[Continue->Final Page]]
+
+:: Final Page
+# The End
+
+The performance has concluded.
+
+''Final Reading Balance:'' <<= $readingBalance>>
+
+[[Return to Title Page->Title Page]]
