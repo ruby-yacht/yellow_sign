@@ -1,0 +1,273 @@
+:: StoryTitle
+The King in Yellow
+
+:: StoryData
+{
+  "ifid": "E0A4C7A9-9D34-4A0B-9A22-KINGINYELLOWPLAY",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Title Page"
+}
+
+:: Title Page
+# The King in Yellow
+
+A Play in Three Acts
+
+**Dramatis Personae**
+
+* Albert
+* Betty
+* Charlie
+* Dorothy
+* Edward
+* Florence
+
+[[Act I, Scene 1->Act I, Scene 1]]
+
+:: Act I, Scene 1
+!! ACT I
+=== Scene 1 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 1.1.]//
+
+'''ALBERT:'''
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+
+'''BETTY:'''
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+'''CHARLIE:'''
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+
+'''DOROTHY:'''
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
+
+'''FLORENCE:'''
+inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+
+[[Next->Act I, Scene 2]]
+
+:: Act I, Scene 2
+=== Scene 2 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 1.2.]//
+
+'''ALBERT:'''
+aut odit aut fugit. Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+
+'''BETTY:'''
+est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit. Sed quia non numquam eius modi tempora
+
+'''CHARLIE:'''
+incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam quis nostrum exercitationem ullam
+
+'''DOROTHY:'''
+corporis suscipit laboriosam. Nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+ea voluptate velit esse quam nihil molestiae consequatur. Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+
+'''FLORENCE:'''
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. Et harum quidem rerum facilis
+
+[[Previous->Act I, Scene 1]] | [[Next->Act I, Scene 3]]
+
+:: Act I, Scene 3
+=== Scene 3 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 1.3.]//
+
+'''ALBERT:'''
+est et expedita distinctio. Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+
+'''BETTY:'''
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. Itaque earum rerum hic tenetur a
+
+'''CHARLIE:'''
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+
+'''DOROTHY:'''
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+
+'''FLORENCE:'''
+ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Eaque ipsa quae
+
+[[Previous->Act I, Scene 2]] | [[Next->Act II, Scene 1]]
+
+:: Act II, Scene 1
+!! ACT II
+=== Scene 1 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 2.1.]//
+
+'''ALBERT:'''
+ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+
+'''BETTY:'''
+sit aspernatur aut odit aut fugit. Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+
+'''CHARLIE:'''
+porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit. Sed quia non numquam eius
+
+'''DOROTHY:'''
+modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam quis nostrum
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+exercitationem ullam corporis suscipit laboriosam. Nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit
+
+'''FLORENCE:'''
+qui in ea voluptate velit esse quam nihil molestiae consequatur. Vel illum qui dolorem eum fugiat quo voluptas
+
+[[Previous->Act I, Scene 3]] | [[Next->Act II, Scene 2]]
+
+:: Act II, Scene 2
+=== Scene 2 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 2.2.]//
+
+'''ALBERT:'''
+nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. Et harum quidem
+
+'''BETTY:'''
+rerum facilis est et expedita distinctio. Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit
+
+'''CHARLIE:'''
+quo minus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. Itaque earum rerum hic
+
+'''DOROTHY:'''
+labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+
+'''FLORENCE:'''
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+
+[[Previous->Act II, Scene 1]] | [[Next->Act II, Scene 3]]
+
+:: Act II, Scene 3
+=== Scene 3 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 2.3.]//
+
+'''ALBERT:'''
+laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Eaque
+
+'''BETTY:'''
+ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+
+'''CHARLIE:'''
+quia voluptas sit aspernatur aut odit aut fugit. Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+
+'''DOROTHY:'''
+nesciunt. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit. Sed quia non
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam
+
+'''FLORENCE:'''
+quis nostrum exercitationem ullam corporis suscipit laboriosam. Nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum
+
+[[Previous->Act II, Scene 2]] | [[Next->Act III, Scene 1]]
+
+:: Act III, Scene 1
+!! ACT III
+=== Scene 1 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 3.1.]//
+
+'''ALBERT:'''
+iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Vel illum qui dolorem eum fugiat
+
+'''BETTY:'''
+quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. Et
+
+'''CHARLIE:'''
+harum quidem rerum facilis est et expedita distinctio. Nam libero tempore cum soluta nobis est eligendi optio cumque
+
+'''DOROTHY:'''
+nihil impedit quo minus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. Itaque earum
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+
+'''FLORENCE:'''
+ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+
+[[Previous->Act II, Scene 3]] | [[Next->Act III, Scene 2]]
+
+:: Act III, Scene 2
+=== Scene 2 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 3.2.]//
+
+'''ALBERT:'''
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+
+'''BETTY:'''
+id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+
+'''CHARLIE:'''
+aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+
+'''DOROTHY:'''
+ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Sed quia consequuntur magni dolores eos qui ratione
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+voluptatem sequi nesciunt. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit. Sed
+
+'''FLORENCE:'''
+quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
+
+[[Previous->Act III, Scene 1]] | [[Next->Act III, Scene 3]]
+
+:: Act III, Scene 3
+=== Scene 3 ===
+
+//[A dim chamber. The stage is lit by an uncertain glow. ALBERT and BETTY enter. Stage direction 3.3.]//
+
+'''ALBERT:'''
+minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam. Nisi ut aliquid ex ea commodi consequatur. Quis autem
+
+'''BETTY:'''
+vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Vel illum qui dolorem
+
+'''CHARLIE:'''
+eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+
+'''DOROTHY:'''
+praesentium. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore cum soluta nobis est eligendi
+
+//[CHARLIE crosses to the far side of the stage. DOROTHY gestures toward an unseen horizon. EDWARD and FLORENCE remain in silence.]//
+
+'''EDWARD:'''
+optio cumque nihil impedit quo minus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.
+
+'''FLORENCE:'''
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+
+[[Previous->Act III, Scene 2]] | [[Return to Title Page->Title Page]]
+

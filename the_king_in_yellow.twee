@@ -1,0 +1,62 @@
+:: StoryTitle
+The King in Yellow
+
+:: StoryData
+{
+  "ifid": "A4B6F8D2-1C33-4E22-9AAA-KINGINYELLOW",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Start"
+}
+
+:: Start
+= The King in Yellow =
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+
+[[Act 1, Scene 1->Act 1, Scene 1]]
+
+:: Act 1, Scene 1
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+[[Next->Act 1, Scene 2]]
+
+:: Act 1, Scene 2
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+
+[[Previous->Act 1, Scene 1]] | [[Next->Act 1, Scene 3]]
+
+:: Act 1, Scene 3
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+[[Previous->Act 1, Scene 2]] | [[Next Act->Act 2, Scene 1]]
+
+:: Act 2, Scene 1
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+
+[[Previous Act->Act 1, Scene 3]] | [[Next->Act 2, Scene 2]]
+
+:: Act 2, Scene 2
+inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+[[Previous->Act 2, Scene 1]] | [[Next->Act 2, Scene 3]]
+
+:: Act 2, Scene 3
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+
+[[Previous->Act 2, Scene 2]] | [[Next Act->Act 3, Scene 1]]
+
+:: Act 3, Scene 1
+consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+[[Previous Act->Act 2, Scene 3]] | [[Next->Act 3, Scene 2]]
+
+:: Act 3, Scene 2
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+
+[[Previous->Act 3, Scene 1]] | [[Next->Act 3, Scene 3]]
+
+:: Act 3, Scene 3
+Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+
+[[Return to Start->Start]]

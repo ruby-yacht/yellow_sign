@@ -1,0 +1,83 @@
+:: StoryTitle
+Three Act Lorem Ipsum Play
+
+:: StoryData
+{
+  "ifid": "7C4E8C0B-5E71-4D44-9E8E-THREEACTPLAY",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Start",
+  "zoom": 1
+}
+
+:: Start
+= Three Act Play =
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+
+[[Begin the Play->Act 1, Scene 1]]
+
+:: Act 1, Scene 1
+== Act 1, Scene 1 ==
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+
+[[Next->Act 1, Scene 2]]
+
+:: Act 1, Scene 2
+== Act 1, Scene 2 ==
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.
+
+[[Previous->Act 1, Scene 1]] | [[Next->Act 1, Scene 3]]
+
+:: Act 1, Scene 3
+== Act 1, Scene 3 ==
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.
+
+[[Previous->Act 1, Scene 2]] | [[Next Act->Act 2, Scene 1]]
+
+:: Act 2, Scene 1
+== Act 2, Scene 1 ==
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.
+
+[[Previous Act->Act 1, Scene 3]] | [[Next->Act 2, Scene 2]]
+
+:: Act 2, Scene 2
+== Act 2, Scene 2 ==
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.
+
+[[Previous->Act 2, Scene 1]] | [[Next->Act 2, Scene 3]]
+
+:: Act 2, Scene 3
+== Act 2, Scene 3 ==
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.
+
+[[Previous->Act 2, Scene 2]] | [[Next Act->Act 3, Scene 1]]
+
+:: Act 3, Scene 1
+== Act 3, Scene 1 ==
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+
+[[Previous Act->Act 2, Scene 3]] | [[Next->Act 3, Scene 2]]
+
+:: Act 3, Scene 2
+== Act 3, Scene 2 ==
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam.
+
+[[Previous->Act 3, Scene 1]] | [[Next->Act 3, Scene 3]]
+
+:: Act 3, Scene 3
+== Act 3, Scene 3 ==
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh.
+
+//Finis.//
+
+[[Return to Start->Start]]
