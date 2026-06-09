@@ -1,0 +1,58 @@
+```twee
+:: StoryTitle
+Endless Reading
+
+:: StoryData
+{
+  "ifid": "A1B2C3D4-E5F6-7890-ENDLESSREADING",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Endless Reading"
+}
+
+:: StoryInit
+<<set $readingBalance = 0>>
+
+<<widget "shiftword">>
+	<<if $readingBalance >= 5>>
+		<<print $args[1]>>
+	<<elseif $readingBalance <= -5>>
+		<<print $args[2]>>
+	<<else>>
+		<<print $args[0]>>
+	<</if>>
+<</widget>>
+
+:: Endless Reading
+
+The <<shiftword "book" "play" "script">> lay upon a table beneath a
+<<shiftword "yellow" "golden" "pale">> lamp.
+
+An old <<shiftword "king" "figure" "shadow">> watched from the far end
+of the room.
+
+Its <<shiftword "mask" "face" "veil">> seemed familiar, though no one
+could remember why.
+
+The pages rustled.
+
+The <<shiftword "book" "play" "script">> opened itself.
+
+The <<shiftword "yellow" "golden" "pale">> light deepened.
+
+The <<shiftword "king" "figure" "shadow">> moved one step closer.
+
+Its <<shiftword "mask" "face" "veil">> tilted slightly.
+
+''Reading Balance:'' <<= $readingBalance>>
+
+<<link "Read On">>
+	<<set $readingBalance += 1>>
+	<<goto "Endless Reading">>
+<</link>>
+
+<<link "Rest">>
+	<<set $readingBalance -= 1>>
+	<<goto "Endless Reading">>
+<</link>>
+```
