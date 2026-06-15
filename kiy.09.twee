@@ -1,0 +1,294 @@
+:: StoryTitle
+kiy.09
+
+
+:: StoryData
+{
+  "ifid": "KING-IN-YELLOW-ENDLESS-PLAY",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Cover",
+  "zoom": 0.6
+}
+
+
+:: Act I, Scene 1 {"position":"175,425","size":"100,100"}
+ACT I
+
+SCENE 1
+
+[A dim chamber. A strange light hangs in the air.]
+
+''Albert:''
+Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.
+
+''Betty:''
+Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi.
+
+''Charlie:''
+Duis aute irure dolor in reprehenderit in voluptate velit esse.
+
+''Dorothy:''
+Excepteur sint occaecat cupidatat non proident sunt in culpa.
+
+[The light flickers.]
+
+<<link "read on" "Act I, Scene 2">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 1">><<set $readingBalance -= 1>><</link>>
+
+
+:: Act I, Scene 2 {"position":"325,425","size":"100,100"}
+ACT I
+
+SCENE 2
+
+[A corridor lined with mirrors.]
+
+''Albert:''
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+
+''Betty:''
+Accusantium doloremque laudantium totam rem aperiam.
+
+''Edward:''
+Eaque ipsa quae ab illo inventore veritatis.
+
+''Florence:''
+Quasi architecto beatae vitae dicta sunt explicabo.
+
+<<link "read on" "Act I, Scene 3">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 2">><<set $readingBalance -= 1>><</link>>
+
+
+:: Act I, Scene 3 {"position":"450,425","size":"100,100"}
+ACT I
+
+SCENE 3
+
+[A distant bell sounds.]
+
+''Charlie:''
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
+
+''Dorothy:''
+Aut odit aut fugit sed quia consequuntur magni dolores.
+
+''Albert:''
+Eos qui ratione voluptatem sequi nesciunt.
+
+<<link "read on" "Act II, Scene 1">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 3">><<set $readingBalance -= 1>><</link>>
+
+
+:: Act II, Scene 1 {"position":"800,400","size":"100,100"}
+ACT II
+
+SCENE 1
+
+[A shore beneath unfamiliar stars.]
+
+''Betty:''
+Neque porro quisquam est qui dolorem ipsum.
+
+''Edward:''
+Quia dolor sit amet consectetur adipisci velit.
+
+''Florence:''
+Sed quia non numquam eius modi tempora incidunt.
+
+<<link "read on" "Act II, Scene 2">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 4">><<set $readingBalance -= 1>><</link>>
+
+
+:: Act II, Scene 2 {"position":"975,400","size":"100,100"}
+ACT II
+
+SCENE 2
+
+[A city glimpsed through mist.]
+
+''Albert:''
+Ut labore et dolore magnam aliquam quaerat voluptatem.
+
+''Charlie:''
+Ut enim ad minima veniam quis nostrum exercitationem.
+
+''Dorothy:''
+Ullam corporis suscipit laboriosam nisi ut aliquid.
+
+<<link "read on" "Act II, Scene 3">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 5">><<set $readingBalance -= 1>><</link>>
+
+
+:: Act II, Scene 3 {"position":"1175,400","size":"100,100"}
+ACT II
+
+SCENE 3
+
+[A gate stands open.]
+
+''Edward:''
+Ex ea commodi consequatur.
+
+''Florence:''
+Quis autem vel eum iure reprehenderit.
+
+''Betty:''
+Qui in ea voluptate velit esse.
+
+<<link "read on" "Act III, Scene 1">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 6">><<set $readingBalance -= 1>><</link>>
+
+
+:: Act III, Scene 1 {"position":"175,750","size":"100,100"}
+ACT III
+
+SCENE 1
+
+[A throne room without walls.]
+
+''Albert:''
+Quam nihil molestiae consequatur.
+
+''Charlie:''
+Vel illum qui dolorem eum fugiat.
+
+''Dorothy:''
+Quo voluptas nulla pariatur.
+
+<<link "read on" "Act III, Scene 2">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 7">><<set $readingBalance -= 1>><</link>>
+
+
+:: Act III, Scene 2 {"position":"400,725","size":"100,100"}
+ACT III
+
+SCENE 2
+
+[A masked procession passes.]
+
+''Betty:''
+At vero eos et accusamus et iusto odio.
+
+''Edward:''
+Dignissimos ducimus qui blanditiis praesentium.
+
+''Florence:''
+Voluptatum deleniti atque corrupti.
+
+<<link "read on" "Act III, Scene 3">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 8">><<set $readingBalance -= 1>><</link>>
+
+
+:: Act III, Scene 3 {"position":"625,725","size":"100,100"}
+ACT III
+
+SCENE 3
+
+[The final page trembles.]
+
+''Albert:''
+Et harum quidem rerum facilis est et expedita distinctio.
+
+''Betty:''
+Nam libero tempore cum soluta nobis est eligendi.
+
+''Charlie:''
+Temporibus autem quibusdam et aut officiis debitis.
+
+''Dorothy:''
+Itaque earum rerum hic tenetur a sapiente delectus.
+
+[[The Final Page->Endless Reading]]
+
+
+:: Cover {"position":"275,100","size":"100,100"}
+<img src="images/cover.png" alt="The King in Yellow Play Cover">
+
+[[Title Page]]
+
+
+:: Endless Reading {"position":"800,725","size":"100,100"}
+The <<shiftword "book" "play" "script">> remains open beneath the <<shiftword "yellow" "golden" "pale">> light. The <<shiftword "king" "figure" "shadow">> waits beyond the stage while the <<shiftword "mask" "face" "veil">> watches from the audience. The book and play and script are all present at once; the yellow and golden and pale light falls across the throne; the king and figure and shadow stand together beneath the curtain; the mask and face and veil become indistinguishable. The story has ended, yet the reading continues. Reading Balance:<<= $readingBalance>>.
+
+<<link "Read on">><<set $readingBalance += 1>><<goto "Endless Reading">><</link>>
+
+<<link "Rest on">><<set $readingBalance -= 1>><<goto "Endless Reading">><</link>>
+
+
+:: Rest 1 {"position":"325,275","size":"100,100"}
+[The curtain falls briefly. The audience waits.]
+
+[[Continue->Act I, Scene 2]]
+
+
+:: Rest 2 {"position":"475,300","size":"100,100"}
+[Silence fills the corridor.]
+
+[[Continue->Act I, Scene 3]]
+
+
+:: Rest 3 {"position":"800,275","size":"100,100"}
+[A pause between acts.]
+
+[[Continue->Act II, Scene 1]]
+
+
+:: Rest 4 {"position":"975,250","size":"100,100"}
+[The waves grow still.]
+
+[[Continue->Act II, Scene 2]]
+
+
+:: Rest 5 {"position":"1150,275","size":"100,100"}
+[The mist closes in.]
+
+[[Continue->Act II, Scene 3]]
+
+
+:: Rest 6 {"position":"175,625","size":"100,100"}
+[The gate remains open.]
+
+[[Continue->Act III, Scene 1]]
+
+
+:: Rest 7 {"position":"400,600","size":"100,100"}
+[The stars drift overhead.]
+
+[[Continue->Act III, Scene 2]]
+
+
+:: Rest 8 {"position":"625,600","size":"100,100"}
+[The procession vanishes.]
+
+[[Continue->Act III, Scene 3]]
+
+
+:: StoryInit {"position":"25,25","size":"100,100"}
+<<set $readingBalance = 0>>
+<<widget "shiftword">><span style="color:yellow;"><<if $readingBalance >= 3>><<print $args[1]>><<elseif $readingBalance <= -3>><<print $args[2]>><<else>><<print $args[0]>><</if>></span><</widget>>
+
+
+:: Title Page {"position":"100,250","size":"100,100"}
+# The King in Yellow
+
+A play in three acts.
+
+Dramatis Personae:
+
+* Albert
+* Betty
+* Charlie
+* Dorothy
+* Edward
+* Florence
+
+[[Begin->Act I, Scene 1]]
+
+[[Act I, Scene 1]] 
+
+[[Act II, Scene 1]] 
+
+[[Act III, Scene 1]] 
+
+[[Endless Reading]] 
