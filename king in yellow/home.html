@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <style>
+    :root { color-scheme: dark; --bg: #14110d; --panel: #211d18; --ink: #efe8d2; --muted: #b9ad8e; --accent: #d0a83a; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; font: 18px/1.55 Georgia, serif; background: radial-gradient(circle at top left, #302515, var(--bg) 42rem); color: var(--ink); display: grid; place-items: center; padding: 24px; }
+    main { width: min(760px, 100%); background: color-mix(in srgb, var(--panel), transparent 8%); border: 1px solid #4c412b; border-radius: 8px; padding: clamp(22px, 5vw, 46px); box-shadow: 0 24px 80px #0009; }
+    h1 { margin: 0 0 18px; font-size: clamp(32px, 8vw, 54px); font-weight: 400; color: #f1d783; }
+    p { margin: 0 0 18px; }
+    ul { margin: 24px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+    a, button { color: var(--accent); background: none; border: 0; padding: 0; font: inherit; text-decoration-thickness: 1px; cursor: pointer; }
+    button:hover, a:hover { color: #ffe08a; }
+    .muted { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main id="app"></main>
+  <script>
+    const sharedVariables = ["visitedPark", "visitedObservatory", "visitedMuseum", "visitedBobaShop", "bookRead", "lastLocation"];
+    const state = harvestUrlState();
+    const app = document.querySelector("#app");
+
+    function harvestUrlState() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        visitedPark: params.get("visitedPark") === "1",
+        visitedObservatory: params.get("visitedObservatory") === "1",
+        visitedMuseum: params.get("visitedMuseum") === "1",
+        visitedBobaShop: params.get("visitedBobaShop") === "1",
+        bookRead: params.get("bookRead") === "1",
+        lastLocation: params.get("lastLocation") || "home"
+      };
+    }
+
+    function storyUrl(target) {
+      const params = new URLSearchParams();
+      params.set("visitedPark", state.visitedPark ? "1" : "0");
+      params.set("visitedObservatory", state.visitedObservatory ? "1" : "0");
+      params.set("visitedMuseum", state.visitedMuseum ? "1" : "0");
+      params.set("visitedBobaShop", state.visitedBobaShop ? "1" : "0");
+      params.set("bookRead", state.bookRead ? "1" : "0");
+      params.set("lastLocation", state.lastLocation || "home");
+      return target + "?" + params.toString();
+    }
+
+    function syncUrl() {
+      window.history.replaceState(null, "", storyUrl("home.html"));
+    }
+
+    function link(label, passage) {
+      return `<li><button type="button" data-passage="${passage}">${label}</button></li>`;
+    }
+
+    function render(passage) {
+      if (passage === "book") state.bookRead = true;
+      if (passage === "frontDoor") state.lastLocation = "frontDoor";
+
+      const visited = [];
+      if (state.visitedPark) visited.push("the park, with its paths crossing like old handwriting");
+      if (state.visitedObservatory) visited.push("the observatory, where the sky felt close enough to bruise");
+      if (state.visitedMuseum) visited.push("the museum, where every exhibit looked away first");
+      if (state.visitedBobaShop) visited.push("the boba shop, bright and sweet against the rest of the day");
+
+      const passages = {
+        livingRoom: `<h1>Living Room</h1><p>The living room is warm and still. A yellow lamp leans over the sofa, and a slim book waits on the table as though it has been saving your place.</p><p class="muted">${state.bookRead ? "The book is closed now. Its cover seems less yellow than you remember." : "The book's cover is the color of old stage light."}</p><ul>${link("Read the book", "book")}${link("Go to the kitchen", "kitchen")}${link("Go to the bedroom", "bedroom")}${link("Go to the front door", "frontDoor")}</ul>`,
+        book: `<h1>The Book</h1><p>You open the book. The first page describes a city under a second moon, a museum full of masks, and a tower where observers chart the movement of impossible stars.</p><p>The words are calm. That makes them worse.</p><ul>${link("Close the book", "livingRoom")}</ul>`,
+        kitchen: `<h1>Kitchen</h1><p>The kitchen smells faintly of tea and rain. A cup sits beside the sink, empty except for a ring of amber at the bottom.</p><ul>${link("Return to the living room", "livingRoom")}</ul>`,
+        bedroom: `<h1>Bedroom</h1><p>The bed is neatly made. When you lie down, the rooms of the house soften around the edges, and the city comes back in pieces.</p>${visited.length ? `<p>You remember:</p><ul>${visited.map(item => `<li>${item}</li>`).join("")}</ul>` : `<p class="muted">You have not brought the city home with you yet.</p>`}<ul>${link("Get up", "livingRoom")}</ul>`,
+        frontDoor: `<h1>Front Door</h1><p>The front door is cool under your hand. Outside, the city waits with its lamps already lit.</p><ul><li><button type="button" data-story-target="city.html">Step into the city</button></li>${link("Return to the living room", "livingRoom")}</ul>`
+      };
+
+      syncUrl();
+      app.innerHTML = passages[passage] || passages.livingRoom;
+    }
+
+    app.addEventListener("click", event => {
+      const button = event.target.closest("[data-passage]");
+      if (button) render(button.dataset.passage);
+
+      const storyTarget = event.target.closest("[data-story-target]");
+      if (storyTarget) window.location.href = storyUrl(storyTarget.dataset.storyTarget);
+    });
+
+    render("livingRoom");
+  </script>
+</body>
+</html>

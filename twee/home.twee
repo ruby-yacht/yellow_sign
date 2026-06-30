@@ -1,0 +1,104 @@
+:: StoryTitle
+Home
+
+
+:: StoryData
+{
+  "ifid": "B6F2FDE3-0D8B-4CC3-BAE6-HOME-CITY-LINK",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Living Room",
+  "zoom": 0.6
+}
+
+
+:: StoryInit
+<<set setup.sharedVariables = ["visitedPark", "visitedObservatory", "visitedMuseum", "visitedBobaShop", "bookRead", "lastLocation"]>>
+<<set setup.harvestUrlState = function () {
+	var params = new URLSearchParams(window.location.search);
+	State.variables.visitedPark = params.get("visitedPark") === "1";
+	State.variables.visitedObservatory = params.get("visitedObservatory") === "1";
+	State.variables.visitedMuseum = params.get("visitedMuseum") === "1";
+	State.variables.visitedBobaShop = params.get("visitedBobaShop") === "1";
+	State.variables.bookRead = params.get("bookRead") === "1";
+	State.variables.lastLocation = params.get("lastLocation") || "home";
+}>>
+<<set setup.storyUrl = function (target) {
+	var params = new URLSearchParams();
+	params.set("visitedPark", State.variables.visitedPark ? "1" : "0");
+	params.set("visitedObservatory", State.variables.visitedObservatory ? "1" : "0");
+	params.set("visitedMuseum", State.variables.visitedMuseum ? "1" : "0");
+	params.set("visitedBobaShop", State.variables.visitedBobaShop ? "1" : "0");
+	params.set("bookRead", State.variables.bookRead ? "1" : "0");
+	params.set("lastLocation", State.variables.lastLocation || "home");
+	return target + "?" + params.toString();
+}>>
+<<set setup.syncUrl = function () {
+	window.history.replaceState(null, "", setup.storyUrl("home.html"));
+}>>
+<<run setup.harvestUrlState()>>
+<<run setup.syncUrl()>>
+
+
+:: Living Room {"position":"300,300","size":"100,100"}
+The living room is warm and still. A yellow lamp leans over the sofa, and a slim book waits on the table as though it has been saving your place.
+
+<<if $bookRead>>
+The book is closed now. Its cover seems less yellow than you remember.
+<<else>>
+The book's cover is the color of old stage light.
+<</if>>
+
+* [[Read the book|The Book]]
+* [[Go to the kitchen|Kitchen]]
+* [[Go to the bedroom|Bedroom]]
+* [[Go to the front door|Front Door]]
+
+
+:: The Book {"position":"450,300","size":"100,100"}
+<<set $bookRead = true>>
+You open the book. The first page describes a city under a second moon, a museum full of masks, and a tower where observers chart the movement of impossible stars.
+
+The words are calm. That makes them worse.
+
+[[Close the book|Living Room]]
+
+
+:: Kitchen {"position":"300,450","size":"100,100"}
+The kitchen smells faintly of tea and rain. A cup sits beside the sink, empty except for a ring of amber at the bottom.
+
+[[Return to the living room|Living Room]]
+
+
+:: Bedroom {"position":"150,300","size":"100,100"}
+The bed is neatly made. When you lie down, the rooms of the house soften around the edges, and the city comes back in pieces.
+
+<<if !$visitedPark and !$visitedObservatory and !$visitedMuseum and !$visitedBobaShop>>
+You have not brought the city home with you yet.
+<<else>>
+You remember:
+<<if $visitedPark>>
+* the park, with its paths crossing like old handwriting
+<</if>>
+<<if $visitedObservatory>>
+* the observatory, where the sky felt close enough to bruise
+<</if>>
+<<if $visitedMuseum>>
+* the museum, where every exhibit looked away first
+<</if>>
+<<if $visitedBobaShop>>
+* the boba shop, bright and sweet against the rest of the day
+<</if>>
+<</if>>
+
+[[Get up|Living Room]]
+
+
+:: Front Door {"position":"300,150","size":"100,100"}
+<<set $lastLocation = "frontDoor">>
+<<run setup.syncUrl()>>
+The front door is cool under your hand. Outside, the city waits with its lamps already lit.
+
+<<link "Step into the city">><<run window.location.href = setup.storyUrl("city.html")>><</link>>
+
+[[Return to the living room|Living Room]]
