@@ -1,5 +1,5 @@
 :: Cover {"position":"275,100","size":"100,100"}
-<img src="../../shared/images/cover.png" alt="The King in Yellow Play Cover" style="display:block;max-width:min(100%,600px);height:auto;margin:0 auto 1.5rem;">
+<img src="shared/images/cover-sm.png" alt="The King in Yellow Play Cover" style="display:block;max-width:min(100%,600px);height:auto;margin:0 auto 1.5rem;">
 
 <<link "Title Page" "Title Page">><<startbackgroundaudio>><</link>>
 
