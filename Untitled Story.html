@@ -1,0 +1,35 @@
+<tw-storydata name="Untitled Story" startnode="" creator="Twine" creator-version="2.12.0" format="" format-version="" ifid="F4F6D17D-A636-4B95-9D05-9B94401CB47D" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="City Center" tags="" position="300,300" size="100,100">The city center gathers the streets into a bright uneasy knot. From here, every destination seems to know your name.
+
+&lt;&lt;if $bookRead&gt;&gt;
+The book from home has made the city more legible, though not kinder.
+&lt;&lt;/if&gt;&gt;
+
+* [[Walk to the park|Park]]
+* [[Climb to the observatory|Observatory]]
+* [[Enter the museum|Museum]]
+* [[Visit the boba shop|Boba Shop]]
+* [[Return home|Return Home]]</tw-passagedata><tw-passagedata pid="2" name="Park" tags="" position="150,300" size="100,100">&lt;&lt;set $visitedPark = true&gt;&gt;
+&lt;&lt;set $lastLocation = &quot;park&quot;&gt;&gt;
+&lt;&lt;run setup.syncUrl()&gt;&gt;
+The park is green in a way that feels theatrical. Paths curve around a dry fountain, and the trees whisper like pages being turned.
+
+[[Back to the city center|City Center]]</tw-passagedata><tw-passagedata pid="3" name="Observatory" tags="" position="300,150" size="100,100">&lt;&lt;set $visitedObservatory = true&gt;&gt;
+&lt;&lt;set $lastLocation = &quot;observatory&quot;&gt;&gt;
+&lt;&lt;run setup.syncUrl()&gt;&gt;
+At the observatory, a brass telescope points at a gap between stars. You look through it and see a window lit inside your own house.
+
+[[Back to the city center|City Center]]</tw-passagedata><tw-passagedata pid="4" name="Museum" tags="" position="450,300" size="100,100">&lt;&lt;set $visitedMuseum = true&gt;&gt;
+&lt;&lt;set $lastLocation = &quot;museum&quot;&gt;&gt;
+&lt;&lt;run setup.syncUrl()&gt;&gt;
+The museum is full of portraits, stage props, and yellowed playbills. One placard is blank except for your reflection.
+
+[[Back to the city center|City Center]]</tw-passagedata><tw-passagedata pid="5" name="Boba Shop" tags="" position="300,450" size="100,100">&lt;&lt;set $visitedBobaShop = true&gt;&gt;
+&lt;&lt;set $lastLocation = &quot;bobaShop&quot;&gt;&gt;
+&lt;&lt;run setup.syncUrl()&gt;&gt;
+The boba shop glows with clean tile, soft music, and sealed cups. For a few minutes, the city seems almost ordinary.
+
+[[Back to the city center|City Center]]</tw-passagedata><tw-passagedata pid="6" name="Return Home" tags="" position="450,150" size="100,100">&lt;&lt;set $lastLocation = &quot;cityCenter&quot;&gt;&gt;
+&lt;&lt;run setup.syncUrl()&gt;&gt;
+The route home folds through side streets and under yellow signs.
+
+&lt;&lt;link &quot;Open the front door&quot;&gt;&gt;&lt;&lt;run window.location.href = setup.storyUrl(&quot;home.html&quot;)&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata></tw-storydata>

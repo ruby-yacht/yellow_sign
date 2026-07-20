@@ -124,7 +124,11 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 	params.set(&quot;lastLocation&quot;, State.variables.lastLocation || &quot;home&quot;);
 	return target + &quot;?&quot; + params.toString();
 }&gt;&gt;
-&lt;&lt;run setup.harvestUrlState()&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Living Room" tags="" position="125,150" size="100,100">The living room is warm and still. A yellow lamp leans over the sofa, and a slim book waits on the table as though it has been saving your place.
+&lt;&lt;set setup.syncUrl = function () {
+	window.history.replaceState(null, &quot;&quot;, setup.storyUrl(&quot;home.html&quot;));
+}&gt;&gt;
+&lt;&lt;run setup.harvestUrlState()&gt;&gt;
+&lt;&lt;run setup.syncUrl()&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Living Room" tags="" position="375,300" size="100,100">The living room is warm and still. A yellow lamp leans over the sofa, and a slim book waits on the table as though it has been saving your place.
 
 &lt;&lt;if $bookRead&gt;&gt;
 The book is closed now. Its cover seems less yellow than you remember.
@@ -135,14 +139,14 @@ The book&#39;s cover is the color of old stage light.
 * [[Read the book|The Book]]
 * [[Go to the kitchen|Kitchen]]
 * [[Go to the bedroom|Bedroom]]
-* [[Go to the front door|Front Door]]</tw-passagedata><tw-passagedata pid="3" name="The Book" tags="" position="775,350" size="100,100">&lt;&lt;set $bookRead = true&gt;&gt;
+* [[Go to the front door|Front Door]]</tw-passagedata><tw-passagedata pid="3" name="The Book" tags="" position="750,325" size="100,100">&lt;&lt;set $bookRead = true&gt;&gt;
 You open the book. The first page describes a city under a second moon, a museum full of masks, and a tower where observers chart the movement of impossible stars.
 
 The words are calm. That makes them worse.
 
-[[Close the book|Living Room]]</tw-passagedata><tw-passagedata pid="4" name="Kitchen" tags="" position="400,575" size="100,100">The kitchen smells faintly of tea and rain. A cup sits beside the sink, empty except for a ring of amber at the bottom.
+[[Close the book|Living Room]]</tw-passagedata><tw-passagedata pid="4" name="Kitchen" tags="" position="325,550" size="100,100">The kitchen smells faintly of tea and rain. A cup sits beside the sink, empty except for a ring of amber at the bottom.
 
-[[Return to the living room|Living Room]]</tw-passagedata><tw-passagedata pid="5" name="Bedroom" tags="" position="150,300" size="100,100">The bed is neatly made. When you lie down, the rooms of the house soften around the edges, and the city comes back in pieces.
+[[Return to the living room|Living Room]]</tw-passagedata><tw-passagedata pid="5" name="Bedroom" tags="" position="75,225" size="100,100">The bed is neatly made. When you lie down, the rooms of the house soften around the edges, and the city comes back in pieces.
 
 &lt;&lt;if !$visitedPark and !$visitedObservatory and !$visitedMuseum and !$visitedBobaShop&gt;&gt;
 You have not brought the city home with you yet.
@@ -162,10 +166,11 @@ You remember:
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
-[[Get up|Living Room]]</tw-passagedata><tw-passagedata pid="6" name="Front Door" tags="" position="300,50" size="100,100">&lt;&lt;set $lastLocation = &quot;frontDoor&quot;&gt;&gt;
+[[Get up|Living Room]]</tw-passagedata><tw-passagedata pid="6" name="Front Door" tags="" position="400,75" size="100,100">&lt;&lt;set $lastLocation = &quot;frontDoor&quot;&gt;&gt;
+&lt;&lt;run setup.syncUrl()&gt;&gt;
 The front door is cool under your hand. Outside, the city waits with its lamps already lit.
 
-&lt;a data-passage=&quot;City&quot; href=&quot;&lt;&lt;print setup.storyUrl(&#39;city.html&#39;)&gt;&gt;&quot;&gt;Step into the city&lt;/a&gt;
+&lt;&lt;link &quot;Step into the city&quot;&gt;&gt;&lt;&lt;run window.location.href = setup.storyUrl(&quot;city.html&quot;)&gt;&gt;&lt;&lt;/link&gt;&gt;
 
 [[Return to the living room|Living Room]]</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
