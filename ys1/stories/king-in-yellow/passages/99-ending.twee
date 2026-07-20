@@ -1,0 +1,6 @@
+:: Endless Reading {"position":"800,725","size":"100,100"}
+The <<shiftword "book" "play" "script">> remains open beneath the <<shiftword "yellow" "golden" "pale">> light. The <<shiftword "king" "figure" "shadow">> waits beyond the stage while the <<shiftword "mask" "face" "veil">> watches from the audience. The book and play and script are all present at once; the yellow and golden and pale light falls across the throne; the king and figure and shadow stand together beneath the curtain; the mask and face and veil become indistinguishable. The story has ended, yet the reading continues. Reading Balance:<<= $readingBalance>>.
+
+<<link "Read on">><<set $readingBalance += 1>><<goto "Endless Reading">><</link>>
+
+<<link "Rest on">><<set $readingBalance -= 1>><<goto "Endless Reading">><</link>>

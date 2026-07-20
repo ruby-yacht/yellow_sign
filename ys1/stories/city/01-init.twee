@@ -1,0 +1,26 @@
+:: StoryInit
+<<set setup.sharedVariables = ["visitedPark", "visitedObservatory", "visitedMuseum", "visitedBobaShop", "bookRead", "lastLocation"]>>
+<<set setup.harvestUrlState = function () {
+	var params = new URLSearchParams(window.location.search);
+	State.variables.visitedPark = params.get("visitedPark") === "1";
+	State.variables.visitedObservatory = params.get("visitedObservatory") === "1";
+	State.variables.visitedMuseum = params.get("visitedMuseum") === "1";
+	State.variables.visitedBobaShop = params.get("visitedBobaShop") === "1";
+	State.variables.bookRead = params.get("bookRead") === "1";
+	State.variables.lastLocation = params.get("lastLocation") || "city";
+}>>
+<<set setup.storyUrl = function (target) {
+	var params = new URLSearchParams();
+	params.set("visitedPark", State.variables.visitedPark ? "1" : "0");
+	params.set("visitedObservatory", State.variables.visitedObservatory ? "1" : "0");
+	params.set("visitedMuseum", State.variables.visitedMuseum ? "1" : "0");
+	params.set("visitedBobaShop", State.variables.visitedBobaShop ? "1" : "0");
+	params.set("bookRead", State.variables.bookRead ? "1" : "0");
+	params.set("lastLocation", State.variables.lastLocation || "city");
+	return target + "?" + params.toString();
+}>>
+<<set setup.syncUrl = function () {
+	window.history.replaceState(null, "", setup.storyUrl("city.html"));
+}>>
+<<run setup.harvestUrlState()>>
+<<run setup.syncUrl()>>

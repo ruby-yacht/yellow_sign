@@ -1,0 +1,11 @@
+:: StoryTitle
+kiy.12
+
+:: StoryData
+{
+  "ifid": "KING-IN-YELLOW-ENDLESS-PLAY",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Cover",
+  "zoom": 0.6
+}

@@ -1,0 +1,51 @@
+:: City Center {"position":"300,300","size":"100,100"}
+The city center gathers the streets into a bright uneasy knot. From here, every destination seems to know your name.
+
+<<if $bookRead>>
+The book from home has made the city more legible, though not kinder.
+<</if>>
+
+* [[Walk to the park|Park]]
+* [[Climb to the observatory|Observatory]]
+* [[Enter the museum|Museum]]
+* [[Visit the boba shop|Boba Shop]]
+* [[Return home|Return Home]]
+
+:: Park {"position":"150,300","size":"100,100"}
+<<set $visitedPark = true>>
+<<set $lastLocation = "park">>
+<<run setup.syncUrl()>>
+The park is green in a way that feels theatrical. Paths curve around a dry fountain, and the trees whisper like pages being turned.
+
+[[Back to the city center|City Center]]
+
+:: Observatory {"position":"300,150","size":"100,100"}
+<<set $visitedObservatory = true>>
+<<set $lastLocation = "observatory">>
+<<run setup.syncUrl()>>
+At the observatory, a brass telescope points at a gap between stars. You look through it and see a window lit inside your own house.
+
+[[Back to the city center|City Center]]
+
+:: Museum {"position":"450,300","size":"100,100"}
+<<set $visitedMuseum = true>>
+<<set $lastLocation = "museum">>
+<<run setup.syncUrl()>>
+The museum is full of portraits, stage props, and yellowed playbills. One placard is blank except for your reflection.
+
+[[Back to the city center|City Center]]
+
+:: Boba Shop {"position":"300,450","size":"100,100"}
+<<set $visitedBobaShop = true>>
+<<set $lastLocation = "bobaShop">>
+<<run setup.syncUrl()>>
+The boba shop glows with clean tile, soft music, and sealed cups. For a few minutes, the city seems almost ordinary.
+
+[[Back to the city center|City Center]]
+
+:: Return Home {"position":"450,150","size":"100,100"}
+<<set $lastLocation = "cityCenter">>
+<<run setup.syncUrl()>>
+The route home folds through side streets and under yellow signs.
+
+<<link "Open the front door">><<run window.location.href = setup.storyUrl("home.html")>><</link>>

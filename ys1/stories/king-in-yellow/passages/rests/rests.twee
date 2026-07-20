@@ -1,0 +1,39 @@
+:: Rest 1 {"position":"325,275","size":"100,100"}
+[The curtain falls briefly. The audience waits.]
+
+[[Continue->Act I, Scene 2]]
+
+:: Rest 2 {"position":"475,300","size":"100,100"}
+[Silence fills the corridor.]
+
+[[Continue->Act I, Scene 3]]
+
+:: Rest 3 {"position":"800,275","size":"100,100"}
+[A pause between acts.]
+
+[[Continue->Act II, Scene 1]]
+
+:: Rest 4 {"position":"975,250","size":"100,100"}
+[The waves grow still.]
+
+[[Continue->Act II, Scene 2]]
+
+:: Rest 5 {"position":"1150,275","size":"100,100"}
+[The mist closes in.]
+
+[[Continue->Act II, Scene 3]]
+
+:: Rest 6 {"position":"175,625","size":"100,100"}
+[The gate remains open.]
+
+[[Continue->Act III, Scene 1]]
+
+:: Rest 7 {"position":"400,600","size":"100,100"}
+[The stars drift overhead.]
+
+[[Continue->Act III, Scene 2]]
+
+:: Rest 8 {"position":"625,600","size":"100,100"}
+[The procession vanishes.]
+
+[[Continue->Act III, Scene 3]]

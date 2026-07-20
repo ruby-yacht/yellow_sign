@@ -1,0 +1,28 @@
+:: Cover {"position":"275,100","size":"100,100"}
+<img src="../../shared/images/cover.png" alt="The King in Yellow Play Cover" style="display:block;max-width:min(100%,600px);height:auto;margin:0 auto 1.5rem;">
+
+<<link "Title Page" "Title Page">><<startbackgroundaudio>><</link>>
+
+:: Title Page {"position":"100,250","size":"100,100"}
+# The King in Yellow
+
+A play in three acts.
+
+Dramatis Personae:
+
+* Albert
+* Betty
+* Charlie
+* Dorothy
+* Edward
+* Florence
+
+[[Begin->Act I, Scene 1]]
+
+[[Act I, Scene 1]] 
+
+[[Act II, Scene 1]] 
+
+[[Act III, Scene 1]] 
+
+[[Endless Reading]]

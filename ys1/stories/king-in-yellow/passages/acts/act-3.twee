@@ -1,0 +1,58 @@
+:: Act III, Scene 1 {"position":"175,750","size":"100,100"}
+ACT III
+
+SCENE 1
+
+[A throne room without walls.]
+
+''Albert:''
+Quam nihil molestiae consequatur.
+
+''Charlie:''
+Vel illum qui dolorem eum fugiat.
+
+''Dorothy:''
+Quo voluptas nulla pariatur.
+
+<<link "read on" "Act III, Scene 2">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 7">><<set $readingBalance -= 1>><</link>>
+
+:: Act III, Scene 2 {"position":"400,725","size":"100,100"}
+ACT III
+
+SCENE 2
+
+[A masked procession passes.]
+
+''Betty:''
+At vero eos et accusamus et iusto odio.
+
+''Edward:''
+Dignissimos ducimus qui blanditiis praesentium.
+
+''Florence:''
+Voluptatum deleniti atque corrupti.
+
+<<link "read on" "Act III, Scene 3">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 8">><<set $readingBalance -= 1>><</link>>
+
+:: Act III, Scene 3 {"position":"625,725","size":"100,100"}
+ACT III
+
+SCENE 3
+
+[The final page trembles.]
+
+''Albert:''
+Et harum quidem rerum facilis est et expedita distinctio.
+
+''Betty:''
+Nam libero tempore cum soluta nobis est eligendi.
+
+''Charlie:''
+Temporibus autem quibusdam et aut officiis debitis.
+
+''Dorothy:''
+Itaque earum rerum hic tenetur a sapiente delectus.
+
+[[The Final Page->Endless Reading]]

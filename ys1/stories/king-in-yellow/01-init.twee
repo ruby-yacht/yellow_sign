@@ -1,0 +1,5 @@
+:: StoryInit {"position":"25,25","size":"100,100"}
+<<set $readingBalance = 0>>
+<<cacheaudio "descend" "../../shared/audio/Descend.mp3">>
+<<widget "shiftword">><span style="color:yellow;"><<if $readingBalance >= 3>><<print $args[1]>><<elseif $readingBalance <= -3>><<print $args[2]>><<else>><<print $args[0]>><</if>></span><</widget>>
+<<widget "startbackgroundaudio">><<audio "descend" loop play>><</widget>>

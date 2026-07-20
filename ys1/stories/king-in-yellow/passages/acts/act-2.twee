@@ -1,0 +1,56 @@
+:: Act II, Scene 1 {"position":"800,400","size":"100,100"}
+ACT II
+
+SCENE 1
+
+[A shore beneath unfamiliar stars.]
+
+''Betty:''
+Neque porro quisquam est qui dolorem ipsum.
+
+''Edward:''
+Quia dolor sit amet consectetur adipisci velit.
+
+''Florence:''
+Sed quia non numquam eius modi tempora incidunt.
+
+<<link "read on" "Act II, Scene 2">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 4">><<set $readingBalance -= 1>><</link>>
+
+:: Act II, Scene 2 {"position":"975,400","size":"100,100"}
+ACT II
+
+SCENE 2
+
+[A city glimpsed through mist.]
+
+''Albert:''
+Ut labore et dolore magnam aliquam quaerat voluptatem.
+
+''Charlie:''
+Ut enim ad minima veniam quis nostrum exercitationem.
+
+''Dorothy:''
+Ullam corporis suscipit laboriosam nisi ut aliquid.
+
+<<link "read on" "Act II, Scene 3">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 5">><<set $readingBalance -= 1>><</link>>
+
+:: Act II, Scene 3 {"position":"1175,400","size":"100,100"}
+ACT II
+
+SCENE 3
+
+[A gate stands open.]
+
+''Edward:''
+Ex ea commodi consequatur.
+
+''Florence:''
+Quis autem vel eum iure reprehenderit.
+
+''Betty:''
+Qui in ea voluptate velit esse.
+
+<<link "read on" "Act III, Scene 1">><<set $readingBalance += 1>><</link>>
+<<link "rest" "Rest 6">><<set $readingBalance -= 1>><</link>>
