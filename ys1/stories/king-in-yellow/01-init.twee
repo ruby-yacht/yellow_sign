@@ -1,5 +1,28 @@
 :: StoryInit {"position":"25,25","size":"100,100"}
 <<set $readingBalance = 0>>
+<<set setup.harvestUrlState = function () {
+	var params = new URLSearchParams(window.location.search);
+	State.variables.visitedPark = params.get("visitedPark") === "1";
+	State.variables.visitedObservatory = params.get("visitedObservatory") === "1";
+	State.variables.visitedMuseum = params.get("visitedMuseum") === "1";
+	State.variables.visitedBobaShop = params.get("visitedBobaShop") === "1";
+	State.variables.bookRead = params.get("bookRead") === "1";
+	State.variables.lastLocation = params.get("lastLocation") || "home";
+}>>
+<<set setup.storyUrl = function (target) {
+	var params = new URLSearchParams();
+	params.set("visitedPark", State.variables.visitedPark ? "1" : "0");
+	params.set("visitedObservatory", State.variables.visitedObservatory ? "1" : "0");
+	params.set("visitedMuseum", State.variables.visitedMuseum ? "1" : "0");
+	params.set("visitedBobaShop", State.variables.visitedBobaShop ? "1" : "0");
+	params.set("bookRead", State.variables.bookRead ? "1" : "0");
+	params.set("lastLocation", State.variables.lastLocation || "home");
+	return target + "?" + params.toString();
+}>>
+<<run setup.harvestUrlState()>>
 <<cacheaudio "descend" "shared/audio/descend.mp3">>
 <<widget "shiftword">><span style="color:yellow;"><<if $readingBalance >= 3>><<print $args[1]>><<elseif $readingBalance <= -3>><<print $args[2]>><<else>><<print $args[0]>><</if>></span><</widget>>
 <<widget "startbackgroundaudio">><<audio "descend" loop play>><</widget>>
+
+:: StoryCaption
+<<link "Return to apartment">><<run window.location.href = setup.storyUrl("home.html")>><</link>>

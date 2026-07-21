@@ -104,12 +104,32 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://19FF876C-9CB2-4982-88CB-51DF67492517// --><tw-storydata name="kiy.12" startnode="2" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="19FF876C-9CB2-4982-88CB-51DF67492517" zoom="0.6" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="StoryInit" tags="" position="25,25" size="100,100">&lt;&lt;set $readingBalance = 0&gt;&gt;
+	<!-- UUID://19FF876C-9CB2-4982-88CB-51DF67492517// --><tw-storydata name="kiy.12" startnode="3" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="19FF876C-9CB2-4982-88CB-51DF67492517" zoom="0.6" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="StoryInit" tags="" position="25,25" size="100,100">&lt;&lt;set $readingBalance = 0&gt;&gt;
+&lt;&lt;set setup.harvestUrlState = function () {
+	var params = new URLSearchParams(window.location.search);
+	State.variables.visitedPark = params.get(&quot;visitedPark&quot;) === &quot;1&quot;;
+	State.variables.visitedObservatory = params.get(&quot;visitedObservatory&quot;) === &quot;1&quot;;
+	State.variables.visitedMuseum = params.get(&quot;visitedMuseum&quot;) === &quot;1&quot;;
+	State.variables.visitedBobaShop = params.get(&quot;visitedBobaShop&quot;) === &quot;1&quot;;
+	State.variables.bookRead = params.get(&quot;bookRead&quot;) === &quot;1&quot;;
+	State.variables.lastLocation = params.get(&quot;lastLocation&quot;) || &quot;home&quot;;
+}&gt;&gt;
+&lt;&lt;set setup.storyUrl = function (target) {
+	var params = new URLSearchParams();
+	params.set(&quot;visitedPark&quot;, State.variables.visitedPark ? &quot;1&quot; : &quot;0&quot;);
+	params.set(&quot;visitedObservatory&quot;, State.variables.visitedObservatory ? &quot;1&quot; : &quot;0&quot;);
+	params.set(&quot;visitedMuseum&quot;, State.variables.visitedMuseum ? &quot;1&quot; : &quot;0&quot;);
+	params.set(&quot;visitedBobaShop&quot;, State.variables.visitedBobaShop ? &quot;1&quot; : &quot;0&quot;);
+	params.set(&quot;bookRead&quot;, State.variables.bookRead ? &quot;1&quot; : &quot;0&quot;);
+	params.set(&quot;lastLocation&quot;, State.variables.lastLocation || &quot;home&quot;);
+	return target + &quot;?&quot; + params.toString();
+}&gt;&gt;
+&lt;&lt;run setup.harvestUrlState()&gt;&gt;
 &lt;&lt;cacheaudio &quot;descend&quot; &quot;shared/audio/descend.mp3&quot;&gt;&gt;
 &lt;&lt;widget &quot;shiftword&quot;&gt;&gt;&lt;span style=&quot;color:yellow;&quot;&gt;&lt;&lt;if $readingBalance &gt;= 3&gt;&gt;&lt;&lt;print $args[1]&gt;&gt;&lt;&lt;elseif $readingBalance &lt;= -3&gt;&gt;&lt;&lt;print $args[2]&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;print $args[0]&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;/span&gt;&lt;&lt;/widget&gt;&gt;
-&lt;&lt;widget &quot;startbackgroundaudio&quot;&gt;&gt;&lt;&lt;audio &quot;descend&quot; loop play&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Cover" tags="" position="275,100" size="100,100">&lt;img src=&quot;shared/images/cover-sm.png&quot; alt=&quot;The King in Yellow Play Cover&quot; style=&quot;display:block;max-width:min(100%,600px);height:auto;margin:0 auto 1.5rem;&quot;&gt;
+&lt;&lt;widget &quot;startbackgroundaudio&quot;&gt;&gt;&lt;&lt;audio &quot;descend&quot; loop play&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="StoryCaption" tags="" position="225,100" size="100,100">&lt;&lt;link &quot;Return to apartment&quot;&gt;&gt;&lt;&lt;run window.location.href = setup.storyUrl(&quot;home.html&quot;)&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Cover" tags="" position="275,100" size="100,100">&lt;img src=&quot;shared/images/cover-sm.png&quot; alt=&quot;The King in Yellow Play Cover&quot; style=&quot;display:block;max-width:min(100%,600px);height:auto;margin:0 auto 1.5rem;&quot;&gt;
 
-&lt;&lt;link &quot;Title Page&quot; &quot;Title Page&quot;&gt;&gt;&lt;&lt;startbackgroundaudio&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Title Page" tags="" position="100,250" size="100,100"># The King in Yellow
+&lt;&lt;link &quot;Title Page&quot; &quot;Title Page&quot;&gt;&gt;&lt;&lt;startbackgroundaudio&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Title Page" tags="" position="100,250" size="100,100"># The King in Yellow
 
 A play in three acts.
 
@@ -130,11 +150,11 @@ Dramatis Personae:
 
 [[Act III, Scene 1]] 
 
-[[Endless Reading]]</tw-passagedata><tw-passagedata pid="4" name="Endless Reading" tags="" position="800,725" size="100,100">The &lt;&lt;shiftword &quot;book&quot; &quot;play&quot; &quot;script&quot;&gt;&gt; remains open beneath the &lt;&lt;shiftword &quot;yellow&quot; &quot;golden&quot; &quot;pale&quot;&gt;&gt; light. The &lt;&lt;shiftword &quot;king&quot; &quot;figure&quot; &quot;shadow&quot;&gt;&gt; waits beyond the stage while the &lt;&lt;shiftword &quot;mask&quot; &quot;face&quot; &quot;veil&quot;&gt;&gt; watches from the audience. The book and play and script are all present at once; the yellow and golden and pale light falls across the throne; the king and figure and shadow stand together beneath the curtain; the mask and face and veil become indistinguishable. The story has ended, yet the reading continues. Reading Balance:&lt;&lt;= $readingBalance&gt;&gt;.
+[[Endless Reading]]</tw-passagedata><tw-passagedata pid="5" name="Endless Reading" tags="" position="800,725" size="100,100">The &lt;&lt;shiftword &quot;book&quot; &quot;play&quot; &quot;script&quot;&gt;&gt; remains open beneath the &lt;&lt;shiftword &quot;yellow&quot; &quot;golden&quot; &quot;pale&quot;&gt;&gt; light. The &lt;&lt;shiftword &quot;king&quot; &quot;figure&quot; &quot;shadow&quot;&gt;&gt; waits beyond the stage while the &lt;&lt;shiftword &quot;mask&quot; &quot;face&quot; &quot;veil&quot;&gt;&gt; watches from the audience. The book and play and script are all present at once; the yellow and golden and pale light falls across the throne; the king and figure and shadow stand together beneath the curtain; the mask and face and veil become indistinguishable. The story has ended, yet the reading continues. Reading Balance:&lt;&lt;= $readingBalance&gt;&gt;.
 
 &lt;&lt;link &quot;Read on&quot;&gt;&gt;&lt;&lt;set $readingBalance += 1&gt;&gt;&lt;&lt;goto &quot;Endless Reading&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 
-&lt;&lt;link &quot;Rest on&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;goto &quot;Endless Reading&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Act I, Scene 1" tags="" position="175,425" size="100,100">ACT I
+&lt;&lt;link &quot;Rest on&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;goto &quot;Endless Reading&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Act I, Scene 1" tags="" position="175,425" size="100,100">ACT I
 
 SCENE 1
 
@@ -155,7 +175,7 @@ Excepteur sint occaecat cupidatat non proident sunt in culpa.
 [The light flickers.]
 
 &lt;&lt;link &quot;read on&quot; &quot;Act I, Scene 2&quot;&gt;&gt;&lt;&lt;set $readingBalance += 1&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;link &quot;rest&quot; &quot;Rest 1&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Act I, Scene 2" tags="" position="325,425" size="100,100">ACT I
+&lt;&lt;link &quot;rest&quot; &quot;Rest 1&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Act I, Scene 2" tags="" position="325,425" size="100,100">ACT I
 
 SCENE 2
 
@@ -174,7 +194,7 @@ Eaque ipsa quae ab illo inventore veritatis.
 Quasi architecto beatae vitae dicta sunt explicabo.
 
 &lt;&lt;link &quot;read on&quot; &quot;Act I, Scene 3&quot;&gt;&gt;&lt;&lt;set $readingBalance += 1&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;link &quot;rest&quot; &quot;Rest 2&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Act I, Scene 3" tags="" position="450,425" size="100,100">ACT I
+&lt;&lt;link &quot;rest&quot; &quot;Rest 2&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Act I, Scene 3" tags="" position="450,425" size="100,100">ACT I
 
 SCENE 3
 
@@ -190,7 +210,7 @@ Aut odit aut fugit sed quia consequuntur magni dolores.
 Eos qui ratione voluptatem sequi nesciunt.
 
 &lt;&lt;link &quot;read on&quot; &quot;Act II, Scene 1&quot;&gt;&gt;&lt;&lt;set $readingBalance += 1&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;link &quot;rest&quot; &quot;Rest 3&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Act II, Scene 1" tags="" position="800,400" size="100,100">ACT II
+&lt;&lt;link &quot;rest&quot; &quot;Rest 3&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="Act II, Scene 1" tags="" position="800,400" size="100,100">ACT II
 
 SCENE 1
 
@@ -206,7 +226,7 @@ Quia dolor sit amet consectetur adipisci velit.
 Sed quia non numquam eius modi tempora incidunt.
 
 &lt;&lt;link &quot;read on&quot; &quot;Act II, Scene 2&quot;&gt;&gt;&lt;&lt;set $readingBalance += 1&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;link &quot;rest&quot; &quot;Rest 4&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="Act II, Scene 2" tags="" position="975,400" size="100,100">ACT II
+&lt;&lt;link &quot;rest&quot; &quot;Rest 4&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Act II, Scene 2" tags="" position="975,400" size="100,100">ACT II
 
 SCENE 2
 
@@ -222,7 +242,7 @@ Ut enim ad minima veniam quis nostrum exercitationem.
 Ullam corporis suscipit laboriosam nisi ut aliquid.
 
 &lt;&lt;link &quot;read on&quot; &quot;Act II, Scene 3&quot;&gt;&gt;&lt;&lt;set $readingBalance += 1&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;link &quot;rest&quot; &quot;Rest 5&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Act II, Scene 3" tags="" position="1175,400" size="100,100">ACT II
+&lt;&lt;link &quot;rest&quot; &quot;Rest 5&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Act II, Scene 3" tags="" position="1175,400" size="100,100">ACT II
 
 SCENE 3
 
@@ -238,7 +258,7 @@ Quis autem vel eum iure reprehenderit.
 Qui in ea voluptate velit esse.
 
 &lt;&lt;link &quot;read on&quot; &quot;Act III, Scene 1&quot;&gt;&gt;&lt;&lt;set $readingBalance += 1&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;link &quot;rest&quot; &quot;Rest 6&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Act III, Scene 1" tags="" position="175,750" size="100,100">ACT III
+&lt;&lt;link &quot;rest&quot; &quot;Rest 6&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Act III, Scene 1" tags="" position="175,750" size="100,100">ACT III
 
 SCENE 1
 
@@ -254,7 +274,7 @@ Vel illum qui dolorem eum fugiat.
 Quo voluptas nulla pariatur.
 
 &lt;&lt;link &quot;read on&quot; &quot;Act III, Scene 2&quot;&gt;&gt;&lt;&lt;set $readingBalance += 1&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;link &quot;rest&quot; &quot;Rest 7&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Act III, Scene 2" tags="" position="400,725" size="100,100">ACT III
+&lt;&lt;link &quot;rest&quot; &quot;Rest 7&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="Act III, Scene 2" tags="" position="400,725" size="100,100">ACT III
 
 SCENE 2
 
@@ -270,7 +290,7 @@ Dignissimos ducimus qui blanditiis praesentium.
 Voluptatum deleniti atque corrupti.
 
 &lt;&lt;link &quot;read on&quot; &quot;Act III, Scene 3&quot;&gt;&gt;&lt;&lt;set $readingBalance += 1&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;link &quot;rest&quot; &quot;Rest 8&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="Act III, Scene 3" tags="" position="625,725" size="100,100">ACT III
+&lt;&lt;link &quot;rest&quot; &quot;Rest 8&quot;&gt;&gt;&lt;&lt;set $readingBalance -= 1&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Act III, Scene 3" tags="" position="625,725" size="100,100">ACT III
 
 SCENE 3
 
@@ -288,21 +308,21 @@ Temporibus autem quibusdam et aut officiis debitis.
 &#39;&#39;Dorothy:&#39;&#39;
 Itaque earum rerum hic tenetur a sapiente delectus.
 
-[[The Final Page-&gt;Endless Reading]]</tw-passagedata><tw-passagedata pid="14" name="Rest 1" tags="" position="325,275" size="100,100">[The curtain falls briefly. The audience waits.]
+[[The Final Page-&gt;Endless Reading]]</tw-passagedata><tw-passagedata pid="15" name="Rest 1" tags="" position="325,275" size="100,100">[The curtain falls briefly. The audience waits.]
 
-[[Continue-&gt;Act I, Scene 2]]</tw-passagedata><tw-passagedata pid="15" name="Rest 2" tags="" position="475,300" size="100,100">[Silence fills the corridor.]
+[[Continue-&gt;Act I, Scene 2]]</tw-passagedata><tw-passagedata pid="16" name="Rest 2" tags="" position="475,300" size="100,100">[Silence fills the corridor.]
 
-[[Continue-&gt;Act I, Scene 3]]</tw-passagedata><tw-passagedata pid="16" name="Rest 3" tags="" position="800,275" size="100,100">[A pause between acts.]
+[[Continue-&gt;Act I, Scene 3]]</tw-passagedata><tw-passagedata pid="17" name="Rest 3" tags="" position="800,275" size="100,100">[A pause between acts.]
 
-[[Continue-&gt;Act II, Scene 1]]</tw-passagedata><tw-passagedata pid="17" name="Rest 4" tags="" position="975,250" size="100,100">[The waves grow still.]
+[[Continue-&gt;Act II, Scene 1]]</tw-passagedata><tw-passagedata pid="18" name="Rest 4" tags="" position="975,250" size="100,100">[The waves grow still.]
 
-[[Continue-&gt;Act II, Scene 2]]</tw-passagedata><tw-passagedata pid="18" name="Rest 5" tags="" position="1150,275" size="100,100">[The mist closes in.]
+[[Continue-&gt;Act II, Scene 2]]</tw-passagedata><tw-passagedata pid="19" name="Rest 5" tags="" position="1150,275" size="100,100">[The mist closes in.]
 
-[[Continue-&gt;Act II, Scene 3]]</tw-passagedata><tw-passagedata pid="19" name="Rest 6" tags="" position="175,625" size="100,100">[The gate remains open.]
+[[Continue-&gt;Act II, Scene 3]]</tw-passagedata><tw-passagedata pid="20" name="Rest 6" tags="" position="175,625" size="100,100">[The gate remains open.]
 
-[[Continue-&gt;Act III, Scene 1]]</tw-passagedata><tw-passagedata pid="20" name="Rest 7" tags="" position="400,600" size="100,100">[The stars drift overhead.]
+[[Continue-&gt;Act III, Scene 1]]</tw-passagedata><tw-passagedata pid="21" name="Rest 7" tags="" position="400,600" size="100,100">[The stars drift overhead.]
 
-[[Continue-&gt;Act III, Scene 2]]</tw-passagedata><tw-passagedata pid="21" name="Rest 8" tags="" position="625,600" size="100,100">[The procession vanishes.]
+[[Continue-&gt;Act III, Scene 2]]</tw-passagedata><tw-passagedata pid="22" name="Rest 8" tags="" position="625,600" size="100,100">[The procession vanishes.]
 
 [[Continue-&gt;Act III, Scene 3]]</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
