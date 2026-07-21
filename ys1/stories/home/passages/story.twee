@@ -7,7 +7,7 @@ The book is closed now. Its cover seems less yellow than you remember.
 The book's cover is the color of old stage light.
 <</if>>
 
-* [[Read the book|The Book]]
+* <<link "Read the book">><<set $bookRead = true>><<run window.location.href = setup.storyUrl("king-in-yellow.html")>><</link>>
 * [[Go to the kitchen|Kitchen]]
 * [[Go to the bedroom|Bedroom]]
 * [[Go to the front door|Front Door]]
